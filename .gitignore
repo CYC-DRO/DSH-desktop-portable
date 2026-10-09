@@ -1,0 +1,31 @@
+# ---------------------------------------------------------------------------
+# DeepSeek Harness 便携版 —— 仓库只放说明文件，成品通过 GitHub Releases 分发
+# ---------------------------------------------------------------------------
+
+# 应用本体与运行时（单文件超过 GitHub 100 MB 硬限制，且属于二进制成品）
+/DeepSeek Harness.exe
+/resources/
+/locales/
+*.dll
+*.pak
+*.dat
+*.bin
+/version
+
+# 运行数据：凭据、会话、Cookie、缓存都在这里，绝对不能提交
+/Data/
+/bootstrap.log
+
+# 本地归档与临时产物
+*.rar
+*.7z
+*.zip
+*.log
+
+# 本机权限修复备份（含本机路径与权限信息）
+/.acl-recovery/
+
+# 系统噪声
+Thumbs.db
+desktop.ini
+.DS_Store
